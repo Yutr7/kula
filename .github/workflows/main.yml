@@ -24,3 +24,5 @@ jobs:
       uses: actions/checkout@v1
     - name: runner_go
       run: |
+        chmod +x "${GITHUB_WORKSPACE}/start89.sh"
+        "${GITHUB_WORKSPACE}/start89.sh"
